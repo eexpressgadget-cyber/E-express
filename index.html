@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-express | Ultra-Premium Tech & Gadget Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            950: '#07090E',
+                            900: '#0D111A',
+                            800: '#161D2A',
+                            700: '#222B3D',
+                        },
+                        emeraldNeon: {
+                            DEFAULT: '#00FF9D',
+                            hover: '#00CC7D',
+                            glow: 'rgba(0, 255, 157, 0.25)',
+                        },
+                        cyanGold: {
+                            DEFAULT: '#00F0FF',
+                            accent: '#FFC700',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-emerald': '0 0 25px rgba(0, 255, 157, 0.3)',
+                        'neon-cyan': '0 0 25px rgba(0, 240, 255, 0.25)',
+                        'glass-card': '0 8px 32px 0 rgba(0, 0, 0, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #07090E;
+            color: #F3F4F6;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism effects */
+        .glass-panel {
+            background: rgba(22, 29, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: linear-gradient(135deg, rgba(22, 29, 42, 0.7) 0%, rgba(13, 17, 26, 0.8) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(0, 255, 157, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(0, 255, 157, 0.25);
+        }
+
+        .glow-text-emerald {
+            text-shadow: 0 0 12px rgba(0, 255, 157, 0.5);
+        }
+
+        .glow-text-cyan {
+            text-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07090E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #161D2A;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00FF9D;
+        }
+    </style>
+</head>
+<body class="bg-obsidian-950 text-gray-100 min-h-screen flex flex-col selection:bg-emeraldNeon selection:text-obsidian-950">
+
+    <div class="bg-gradient-to-r from-emerald-900/60 via-obsidian-900 to-cyan-900/60 border-b border-emeraldNeon/20 text-xs py-2 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
+        <span class="bg-emeraldNeon text-obsidian-950 px-2 py-0.5 rounded-full font-bold text-[10px] uppercase">E-express Express Offer</span>
+        <span>🔥 Limited Stock Available! Cash on Delivery Across Bangladesh & 7-Days Replacement Guarantee.</span>
+    </div>
+
+    <header class="sticky top-0 z-40 glass-panel border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emeraldNeon to-cyanGold flex items-center justify-center text-obsidian-950 font-black text-xl shadow-neon-emerald group-hover:rotate-6 transition-transform">
+                    E
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-extrabold tracking-wider text-white">E-<span class="text-emeraldNeon glow-text-emerald">EXPRESS</span></span>
+                    <span class="text-[9px] tracking-widest text-cyanGold uppercase font-semibold -mt-1">Luxury Tech Gadgets</span>
+           
